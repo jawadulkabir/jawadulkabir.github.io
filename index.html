@@ -49,6 +49,9 @@
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#research">Research</a>
           </li>
           <li class="nav-item">
@@ -197,6 +200,49 @@
         </div>
       </section>
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+      
+          <div class="subheading text-primary">
+            EventFly - Event Management System
+          </div>
+          <p>
+            Numerous events are being organized around us everyday. Even though the process of arranging an event is already
+            digital these days, the organizers have to go through several different platforms just to coordinate every bits
+            and pieces and make the whole thing possible. From using social media like Facebook to create an event to manually
+            going through an excel sheet to verify a participant’s check-in, the existing practices are too inefficient and
+            disorderly. This is the purpose of creating a single platform that will work as a one-stop solution for the
+            organizers of an event that will provide them all the necessary services without the hassle that they had to go
+            through before.
+          </p>
+          <p> 
+            Tools: ExpressJS, ReactJS, NextJS, MongoDB
+          </p>
+          <button class="btn btn-success" onclick="viewProject('eventfly')"> View Project</button>
+      
+
+          <div class="subheading text-primary mt-5">
+            C Language Subset Compiler
+          </div>
+          <p>
+            In this project, a simple compiler is constructed that can work with a signifant portion of C the language. The whole process is divided into 4 steps. The first one is a symbol table which is a data structure maintained by the compiler to store information about the occurrence of various entities such as identifiers, objects, function names and other keywords. The next step is to build a lexical analyzer that takes these symbols and converts them into a sequence of tokens. In the third step, this token streams are fed to a parser generator with prespecified grammar rules to perform syntax analysis and semantic analysis. Finally, intermediate assembly code (for 8086 processors) is generated based on the matched rules which can run on assembly emulators like EMU8086.
+          </p>
+          <p> 
+            Tools: Flex, Bison
+          </p>
+          <button class="btn btn-success" onclick="viewProject('compiler')"> View Project</button>
+      
+
+          <div class="subheading text-primary mt-5">
+            PolyMono - Multiplayer Monopoly Game
+          </div>
+          <p>
+            This is a multiplayer monopoly game which is a client/server application built using Java socket programming. The game server (using server socket) waits for players to connect and after certain number of players have joined in, the multiplayer game starts. It can handle simultaneous multiplayer matches at the same time using Java's multithreading for number of players ranging from 2 to 4. The GUI of the game is built using JavaFX.
+          </p>
+          <button class="btn btn-success" onclick="viewProject('monopoly')"> View Project</button>
+      </section>
+
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="research">
         <div class="my-auto">
           <h2 class="mb-5">Research</h2>
@@ -225,7 +271,7 @@
           <div class="subheading text-primary mt-4">
             Technical Tools
           </div>
-          Git · SQL Server Management Studio · Jenkins · Razor · TeX · Navicat · Microsoft Excel · Linux(Ubuntu)
+          Git · SQL Server Management Studio · Jenkins · Razor · TeX · Navicat · Microsoft Excel · Linux (Ubuntu)
         </div>
       </section>
 
@@ -283,3 +329,21 @@
   </body>
 
 </html>
+
+<script>
+  function viewProject(project)
+  {
+    if(project == "eventfly")
+    {
+      window.open("https://github.com/eventfly/Microservices");
+    }
+    else if(project == "compiler")
+    {
+      window.open("https://github.com/jawadulkabir/c-subset-compiler");
+    }
+    else if(project == "monopoly")
+    {
+      window.open("https://github.com/jawadulkabir/PolyMono");
+    }
+  }
+</script>
