@@ -114,6 +114,11 @@ h2 {
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         display: block
     }
+
+    section.resume-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
 }
 
 section.resume-section {
@@ -128,18 +133,11 @@ section.resume-section .resume-item .resume-date {
 
 @media (min-width:768px) {
     section.resume-section {
-        min-height: 69vh
+        min-height: 69vh;
     }
 
     section.resume-section .resume-item .resume-date {
         min-width: 18rem
-    }
-}
-
-@media (min-width:992px) {
-    section.resume-section {
-        padding-top: 3rem !important;
-        padding-bottom: 3rem !important
     }
 }
 
@@ -183,7 +181,18 @@ span.mobile-image > img{
 }
 
 .resume-section{
-    margin: 2rem 2rem;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+@media (max-width: 768px){
+    .resume-section{        
+        margin: 2rem 0rem;
+    }
+}
+
+@media (min-width: 768px){
+    .resume-section{        
+        margin: 2rem 2rem;
+    }
 }
