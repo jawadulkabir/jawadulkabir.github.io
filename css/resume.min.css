@@ -6,7 +6,8 @@
 body {
     font-family: 'Open Sans', serif;
     padding-top: 54px;
-    color: #868e96
+    color: #868e96;
+    background-color: #f7f8ff;
 }
 
 @media (min-width:992px) {
@@ -127,7 +128,7 @@ section.resume-section .resume-item .resume-date {
 
 @media (min-width:768px) {
     section.resume-section {
-        min-height: 100vh
+        min-height: 69vh
     }
 
     section.resume-section .resume-item .resume-date {
@@ -161,14 +162,28 @@ a:hover {
 }
 
 @media (max-width: 992px){
-  span.mobile-image{
-    display: flex!important;
-    justify-content: center;
-    padding: 4rem;
-  }
+    .section-header{
+        text-align: center;
+    }
+
+    span.mobile-image{
+        display: flex!important;
+        justify-content: center;
+        padding: 4rem;
+    }
 }
 
 span.mobile-image > img{
     height: 60vw;
     width: 60vw;
+}
+
+.btn-project:hover{
+  cursor: pointer;
+}
+
+.resume-section{
+    margin: 2rem 2rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
